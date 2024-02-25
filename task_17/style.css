@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    font-size: 1.2rem;
+    color: #c4c3ca;
+    line-height: 3;
+    letter-spacing: 0.1rem;
+	background-color: #1f2029;
+}
+main {
+    margin: 3rem auto;
+}
+input {
+    width: 40rem;
+    height: 4rem;
+    padding: 2rem;
+    font-size: 1.35rem;
+    color: black;
+    line-height: 2.5;
+    letter-spacing: 0.2rem;
+    background-color: #ffeba7;
+    border-radius: 0.5rem;
+    outline: none;
+}
+#result {
+    margin-top: 2rem;
+    width: 40rem;
+    text-align: center;
+    background-color: #2a2b38;
+    border-radius: 0.4rem;
+    list-style-type: none;
+}
+#result > li {
+    border: 1px solid #1f2029;
+    cursor: pointer;
+}
+#result > li:hover {
+    color: #ffeba7;
+    border: 1px solid #ffeba7;
+}

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #18191C;
+}
+fieldset {
+    width: 40rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+legend {
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+}
+.form_item {
+    position: relative;
+}
+label {
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    letter-spacing: 0.12rem;
+    cursor: text;
+}
+input {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+    letter-spacing: 0.15rem;
+    border-radius: 0.3rem;
+    outline: none;
+    cursor: text;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+}
+input:focus {
+    border: 2px solid #FF8630;
+}
+.form_item > span {
+    font-size: 0.95rem;
+    color: #f55123;
+    position: absolute;
+    bottom: -3.5rem;
+    display: none;
+    line-height: 0.9rem;
+    letter-spacing: 0.12rem;
+}
+button {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    background-color: #FF8630;
+    border-radius: 0.3rem;
+}
+button:hover {
+    border: 2px solid #FFFFFF;
+}
+button:active {
+    background-color: #FFFFFF;
+}

@@ -1,0 +1,40 @@
+body {
+    margin: 3rem;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+table {
+    width: 100%;
+}
+th, td {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid black;
+}
+th {
+    background-color: #f7f7f7;
+}
+.pagination {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+button {
+    margin: 0.5rem;
+    padding: 0.4rem 0.4rem;
+    min-width: 2rem;
+    border: none;
+    border-radius: 1px;
+    outline: 1px solid #494a4f;
+    cursor: pointer;
+}
+button.active {
+    color: white;
+    background-color: #007bff;
+}
+.hidden {
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+}

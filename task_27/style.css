@@ -1,0 +1,10 @@
+#figure {
+    margin: 5rem;
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    background-color: #cfd2d8;
+    border: 0.15rem solid black;
+    transition: ease-in-out 2s;
+    cursor: pointer;
+}

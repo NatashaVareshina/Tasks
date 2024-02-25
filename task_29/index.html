@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interaction with forms</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="form.js" defer></script>
+    </head>
+    <body>
+        <section id="container">
+            <form id="form">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <div class="form_item">
+                        <label for="name__user">
+                            Name
+                            <input 
+                                type="text" 
+                                name="name" 
+                                placeholder="Enter your name" 
+                                minlength="1" 
+                                id="name__user" 
+                            />
+                        </label>
+                        <span class="name__user_message"></span>
+                    </div>
+                    <div class="form_item">
+                        <label for="email">
+                            Email
+                            <input 
+                                type="email" 
+                                name="email" 
+                                placeholder="Enter your email address" 
+                                id="email" 
+                            />
+                        </label>
+                        <span class="email_message"></span>
+                    </div>
+                    <button type="submit" id="btn">Subscribe</button>
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>

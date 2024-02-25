@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background-color: #e9e9e9;
+}
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+h1 {
+    margin: 6rem auto;
+    font-size: 3rem;
+    color: rgb(100, 57, 134);
+}
+#widget {
+    margin: 5rem;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-color: whitesmoke;
+    border-top: 1rem solid whitesmoke;
+    border-bottom: 1rem solid whitesmoke;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 
+        0 6px 6px rgba(0, 0, 0, 0.23);
+    overflow-y: scroll;
+}
+#loader {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    border-radius: 50%;
+}
+[class*="loader_element__"] {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    border-radius: 50%;  
+}
+.loader_element__first {
+    top: 0;
+    left: 0;
+    border-bottom: 0.25rem solid #3C4B57;
+    animation: rotate-one 1s linear infinite;
+}
+.loader_element__second {
+    top: 0;
+    right: 0;
+    border-right: 0.25rem solid #3C4B57;
+    animation: rotate-two 1s linear infinite;
+}
+.loader_element__third {
+    bottom: 0;
+    right: 0;
+    border-top: 0.25rem solid #3C4B57;
+    animation: rotate-three 1s linear infinite;
+}
+@keyframes rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+@keyframes rotate-two {
+    0% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+@keyframes rotate-three {
+    0% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+#posts__list > li {
+    padding-bottom: 3rem;
+}
+#posts__list > li:not(:last-child) {
+    border-bottom: 1px solid grey;
+}
+p {
+    font-size: 1.2rem;
+    overflow-wrap: anywhere;
+}
+#widget > ol > li > div:last-child {
+    margin: 2.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
